@@ -1,6 +1,6 @@
 {
   "name": "@gbesse/jev-insersup-claim-check",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Vérifie si une affirmation d’insertion est soutenue par l’indicateur InserSup cité.",
   "type": "module",
   "license": "MIT",

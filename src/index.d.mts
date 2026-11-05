@@ -5,3 +5,5 @@ export const DECISIONS: Readonly<Record<string, string>>;
 export function claimCase(input: any): SourceRecord;
 export function checkInserSupClaim(input: any, provider: JevProvider): Promise<any>;
 export function runCli(argv: string[], io?: { log(value: string): void }): Promise<void>;
+
+export function compareClaimScope(claim: Record<string,unknown>, official: Record<string,unknown>): {comparable:boolean;missing:string[];mismatches:string[];numeric:boolean;exactMatch:boolean;percentagePointDelta:number|null};
