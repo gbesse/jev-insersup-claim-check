@@ -37,3 +37,5 @@ export async function runCli(argv, io = console) {
   const record = claimCase(JSON.parse(await readFile(argv[0], "utf8")));
   io.log(JSON.stringify({ dossier: record, prochaineÉtape: "Transmettez ce dossier à checkInserSupClaim avec un fournisseur Jev configuré." }, null, 2));
 }
+
+export {compareClaimScope} from './comparison.mjs';

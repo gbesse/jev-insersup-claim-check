@@ -118,3 +118,12 @@ npm run demo
 La CI exécute ces vérifications sous Node.js 22 et 24.
 
 Projet indépendant, sans affiliation avec TypeSafe AI, data.gouv.fr ni l’administration française. Consultez la [documentation de l’API Jev](https://docs.typesafe.ai/api) et les [limites du modèle](https://docs.typesafe.ai/model-jaggedness/jev-1.13).
+
+
+## 2026-11-05 — FR / EN / ES
+
+FR : API `compareClaimScope(claim, official)` : compare cohorte, population, horizon, mesure et unité avant de déclarer un nombre identique. Exemple `value:82` sur deux cohortes différentes donne `exactMatch:false`. Fonction hors ligne facultative ; l’ancienne API reste inchangée et ne vérifie pas ces dimensions.
+
+EN: API `compareClaimScope(claim, official)` compares cohort, population, horizon, measure and unit before calling identical numbers exact. `value:82` on different cohorts gives `exactMatch:false`. Optional offline function; legacy API is unchanged and does not check these dimensions.
+
+ES: API `compareClaimScope(claim, official)` compara cohorte, población, horizonte, medida y unidad antes de declarar cifras idénticas exactas. `value:82` en cohortes distintas da `exactMatch:false`. Función opcional sin red; API anterior no cambia ni comprueba estas dimensiones.
